@@ -8,7 +8,7 @@ describe('Store Testcase', () => {
     cy.get(':nth-child(1) > .field > .field__content > .field-block').type("avadhraj@7span.com")
     cy.get(':nth-child(2) > .field > .field__content > .field-block').type("a")
     cy.get('.vp-flex > .button').click()
-    cy.log("Success")
+    //cy.log("Success")
     cy.wait(5000)
     
   })
