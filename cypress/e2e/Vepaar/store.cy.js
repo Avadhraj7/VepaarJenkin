@@ -10,5 +10,6 @@ describe('Store Testcase', () => {
     cy.get('.vp-flex > .button').click()
     // cy.log("Success")
     cy.wait(5000)
+    
   })
 });
