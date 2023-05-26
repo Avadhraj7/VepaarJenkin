@@ -1,0 +1,16 @@
+name: Run Cypress tests
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Cypress
+        run: npm install cypress --save-dev
+      - name: Run Cypress tests
+        run: npm run runtests
